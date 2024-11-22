@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Player Demo</title>
+</head>
+<body>
+  <div id="player"></div>
+  <img src="C:\Users\Shruti\Desktop\model\et1.jpg" width="600" height="550" style="float: left;">
+  <img src="C:\Users\Shruti\Desktop\model\et2.png" width="600" height="550" style="float: left;">
+  <!DOCTYPE html>
+  <div id="player"></div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '360',
+        width: '640',
+        videoId: 'aOL-yBRQHmM', // Replace with your desired video ID
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    function onPlayerReady(event) {
+      event.target.playVideo();
+    }
+
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.ENDED) {
+        // Do something when the video ends
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

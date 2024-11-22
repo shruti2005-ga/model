@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body></body>
+   
+       <h1>Welcome, Learner!</h1>
+        <img src="C:\Users\Shruti\Desktop\model\Indian-Sign-language.jpeg" width="600" height="550" style="float: left;">
+        <div class="login-container">
+        <h1 class='title'> Deaf and Mute Student Login</h1>
+        <form id='loginForm'>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br></br>
+           <button type="submit" class="login-btn" onclick="openNewPage()">Log in</button>
+          <script>
+            function openNewPage() {
+                window.open("main.html"); // Replace "new_page.html" with the actual filename
+            }
+            </script>
+          
+        </form>
+
+    </div>
+    <script src="index.js"></script>
+    </body>
+</html>

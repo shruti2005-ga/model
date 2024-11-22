@@ -1,0 +1,18 @@
+
+body {
+    background-color:#B0E0E6; 
+   justify-content: center; /* Replace with your desired color */
+}
+button {
+  border: 2px solid #333; /* Dark gray border color */
+  padding: 10px 20px; /* Adjust padding for desired spacing */
+  border-radius: 5px; /* Add rounded corners */
+  background-color: #eee; /* Light background color */
+  color: #333; /* Dark text color for readability */
+  cursor: pointer; /* Indicate clickable button */
+  transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+button:hover {
+  background-color: #ddd; /* Slightly darker background on hover */
+}
